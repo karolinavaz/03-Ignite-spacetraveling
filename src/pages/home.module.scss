@@ -1,1 +1,74 @@
-// TODO
+.containerHome {
+    padding: 3rem 0;
+    margin: 0 auto;
+    .buttonLoadMore {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 22px;
+        /* identical to box height */
+
+        text-align: justify;
+
+        color: var(--highlight);
+
+        background: transparent;
+        border: none;
+
+        &:hover {
+            filter: brightness(1.3);
+            text-decoration: underline;
+        }
+    }
+
+    .itemPost {
+        margin: 2rem auto;
+        cursor: pointer;
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.74rem;
+            line-height: 34px;
+    
+            text-align: justify;
+            letter-spacing: -0.5px;
+    
+            color: var(--heading);
+        }
+    
+        p {
+            margin: 0.5rem auto;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 22px;
+    
+            text-align: justify;
+    
+            color: var(--body);
+        }
+    
+        .infoContainer {
+            display: flex;
+            flex-direction: row;
+    
+            font-weight: 400;
+            font-size: 0.855rem;
+            line-height: 17px;
+    
+            color: var(--info);
+    
+            div {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+                margin-top: 1.5vh;
+            }
+    
+            svg {
+                font-size: 1.2rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    
+}
+

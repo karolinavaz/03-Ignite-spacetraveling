@@ -1,1 +1,10 @@
-// TODO
+.container {
+    max-width: 1200px;
+    margin: 0;
+   
+    height: calc(100vh - 3rem);
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
