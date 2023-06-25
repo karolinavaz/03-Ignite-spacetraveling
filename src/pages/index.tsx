@@ -40,9 +40,9 @@ export default function Home({ postsPagination }: HomeProps) {
   const [posts, setPosts] = useState(postsPagination);
 
   function loadMorePost() {
-    if (postsPagination?.next_page !== null) {
+    if (posts?.next_page !== null) {
       try {
-        fetch(postsPagination?.next_page)
+        fetch(posts?.next_page)
           .then(response => response.json())
           .then(data => {
             setPosts(prevPost => ({
@@ -70,7 +70,7 @@ export default function Home({ postsPagination }: HomeProps) {
               <div className={styles.itemPost}>
               <h2>{posts?.data?.title}</h2>
               <p>{posts?.data?.subtitle}</p>
-              <div className={styles.infoContainer}>
+              <div className={commonStyles.infoContainer}>
                 <div>
                   <FiCalendar />
                   <time>
